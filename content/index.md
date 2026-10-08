@@ -9,3 +9,6 @@ title: Jay Kwon
 
 ## Projects
 - [[project-1|첫 번째 프로젝트]]
+
+## Study
+- [[프로그래밍 기능사/필기/index|프로그래밍 기능사 - 필기]]
