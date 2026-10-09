@@ -2,6 +2,8 @@
 title: "1009 - Gradle과 Maven"
 ---
 
+> 📺 공부 중인 강의: [스프링 입문 강의 (YouTube 재생목록)](https://www.youtube.com/watch?v=qyGjLVQ0Hog&list=PLumVmq_uRGHgBrimIp2-7MCnoPUskVMnd)
+
 # 초압축
 
 ```
