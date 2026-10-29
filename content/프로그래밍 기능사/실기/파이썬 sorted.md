@@ -1,5 +1,5 @@
-note = sorted(a, key=b, reverse=c) 같은 코드에서 순서대로
-a b c 가 의미하는게 무엇일까.
+`note = sorted(a, key=b, reverse=c)` 같은 코드에서 순서대로
+"a b c" 가 의미하는게 무엇일까.
 
 일단 sorted -> 배열 정렬이라고 알고있었는데 파이썬에서 다시보니 좀 헷갈려,
 더 확실하게 알기 위해서 글 작성.
