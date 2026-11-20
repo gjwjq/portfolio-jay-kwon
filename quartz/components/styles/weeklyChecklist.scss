@@ -1,0 +1,145 @@
+.weekly-checklist {
+  margin-block: 1.5rem 2rem;
+  padding: clamp(1rem, 4vw, 1.5rem);
+  border: 1px solid var(--lightgray);
+  border-radius: 0.75rem;
+
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.375rem;
+  }
+
+  h3 {
+    font-size: 1.06rem;
+  }
+
+  .weekly-checklist-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.25rem 0.75rem;
+  }
+
+  [data-week-range],
+  [data-week-count],
+  [data-total-count],
+  [data-storage-status],
+  [data-open-empty],
+  [data-completed-empty],
+  time {
+    font-size: 0.9rem;
+  }
+
+  [data-week-count],
+  [data-total-count] {
+    color: var(--secondary);
+    font-weight: 600;
+  }
+
+  .weekly-checklist-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-block: 1rem 0.3rem;
+
+    input {
+      box-sizing: border-box;
+      flex: 1;
+      min-width: 0;
+      padding: 0.5rem 0.65rem;
+      border: 1px solid var(--gray);
+      border-radius: 0.35rem;
+      background: var(--light);
+      color: var(--dark);
+      font: inherit;
+    }
+
+    button {
+      border-radius: 0.35rem;
+      padding: 0.5rem 0.85rem;
+      background: var(--secondary);
+      color: var(--light);
+      white-space: nowrap;
+    }
+  }
+
+  button {
+    border: 0;
+    font: inherit;
+    cursor: pointer;
+  }
+
+  :is(input, button):focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+
+  .weekly-checklist-history {
+    margin-top: 1.25rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--lightgray);
+  }
+
+  [data-open-empty],
+  [data-completed-empty] {
+    margin-top: 0.6rem;
+  }
+
+  ul {
+    margin: 0.6rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-block: 0.25rem;
+
+    + li {
+      border-top: 1px solid var(--lightgray);
+    }
+
+    label {
+      display: flex;
+      flex: 1;
+      align-items: baseline;
+      gap: 0.6rem;
+      min-width: 0;
+      padding-block: 0.3rem;
+      overflow-wrap: anywhere;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+      flex: none;
+      margin: 0;
+      border-color: var(--gray);
+      cursor: pointer;
+    }
+
+    button {
+      background: transparent;
+      color: var(--darkgray);
+      font-size: 0.9rem;
+      padding: 0.35rem 0.25rem;
+    }
+
+    time {
+      flex: none;
+    }
+  }
+
+  [data-completed-tasks] label span {
+    color: var(--darkgray);
+    opacity: 0.8;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+}
